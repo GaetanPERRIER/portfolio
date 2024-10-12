@@ -1,6 +1,7 @@
 <script setup lang="js">
 
 import { useMainStore } from "~/store";
+import {gsap} from "gsap";
 const store = useMainStore();
 
 
@@ -32,6 +33,16 @@ function toggleNavbarMenu() {
     isMenuOpen.value = !isMenuOpen.value;
 }
 
+function ScrollTo(event) {
+    const menuContentChildren = document.querySelector('.menu-content').children;
+    const sections = document.querySelectorAll('section');
+    const id = Array.from(menuContentChildren).findIndex(child => child.innerText === event.target.innerText) + 1;
+
+    gsap.to(window, {duration: 1.5, scrollTo: sections[id], ease: "power4.inOut"});
+
+    toggleNavbarMenu();
+}
+
 </script>
 
 <template>
@@ -42,7 +53,7 @@ function toggleNavbarMenu() {
             <img class="icon-en u-noselect" src="~/assets/imgs/lang-icons/royaume-uni.png" alt="" :style="{ right: lang === 'en' ? '0' : '34px', opacity: lang === 'en' ? 1 : 0 }">
         </div>
         <div class="menu-content w40 u-flex u-align-items-center u-justify-content-center u-gap50">
-            <NuxtLink :to="navEl.link" v-for="navEl in navbarContent ?? []">{{ navEl.name }}</NuxtLink>
+            <p v-if="isMenuOpen" @click="ScrollTo" v-for="navEl in navbarContent ?? []">{{ navEl.name }}</p>
         </div>
         <div class="menu">
             <div class="menu-burger u-flex u-flex-direction-column-reverse u-justify-content-center u-align-content-center" @click="toggleNavbarMenu">
@@ -80,6 +91,7 @@ nav {
         height: 30px;
         width: 60px;
         box-shadow: rgba(255, 255, 255, 0.3) 0px 7px 29px 0px;
+        background-color: rgb(0,0,0,0.3);
 
         img {
             position: absolute;
@@ -111,11 +123,13 @@ nav {
     }
 
     div {
-        a {
+        p {
             color: #FFF;
-            font-size: 18px;
+            font-size: 24px;
             text-decoration: none;
             text-transform: uppercase;
+            font-family: 'Inconsolata', serif;
+            cursor: pointer;
 
         }
     }

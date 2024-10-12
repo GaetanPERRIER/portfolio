@@ -4,19 +4,19 @@
     "content" : [
       {
         "name": "about",
-        "link": "about"
-      },
-      {
-        "name": "formations",
-        "link": "formations"
+        "id": "0"
       },
       {
         "name": "projects",
-        "link": "projects"
+        "id": "1"
+      },
+      {
+        "name": "formations",
+        "id": "2"
       },
       {
         "name": "contact",
-        "link": "contact"
+        "id": "3"
       }
     ]
   },
@@ -25,6 +25,13 @@
     "content": {
       "name" : "Gaëtan PERRIER",
       "job" : "Student in IT"
+    }
+  },
+  {
+    "type" : "about",
+    "content": {
+      "title" : "About me",
+      "text" : "My name is Gaëtan Perrier, I'm 20 years old and I'm a student in my 3rd year of BUT Informatique at iut d'Amiens. I'm currently looking for a 14-week internship starting March 3, 2025."
     }
   }
 ]

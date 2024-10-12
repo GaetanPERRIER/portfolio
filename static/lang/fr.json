@@ -4,19 +4,19 @@
     "content" : [
       {
         "name": "à propos",
-        "link": "about"
-      },
-      {
-        "name": "formations",
-        "link": "formations"
+        "id": "0"
       },
       {
         "name": "projets",
-        "link": "projects"
+        "id": "1"
+      },
+      {
+        "name": "formations",
+        "id": "2"
       },
       {
         "name": "contact",
-        "link": "contact"
+        "id": "3"
       }
     ]
   },
@@ -25,6 +25,13 @@
     "content": {
       "name" : "Gaëtan PERRIER",
       "job" : "Étudiant en informatique"
+    }
+  },
+  {
+    "type" : "about",
+    "content": {
+      "title" : "À propos de moi",
+      "text" : "Je m'appelle Gaëtan Perrier, j'ai 20 ans et je suis étudiant en 3ème année de BUT Informatique à l'iut d'Amiens. Je suis actuellemnt à la recherche dun stage de fin d'études pour une durée de 14 semaines minimum à partir du 3 mars 2025"
     }
   }
 ]
