@@ -1,0 +1,30 @@
+[
+  {
+    "type" : "navbar",
+    "content" : [
+      {
+        "name": "about",
+        "link": "about"
+      },
+      {
+        "name": "formations",
+        "link": "formations"
+      },
+      {
+        "name": "projects",
+        "link": "projects"
+      },
+      {
+        "name": "contact",
+        "link": "contact"
+      }
+    ]
+  },
+  {
+    "type" : "banner",
+    "content": {
+      "name" : "Gaëtan PERRIER",
+      "job" : "Student in IT"
+    }
+  }
+]
