@@ -13,10 +13,10 @@ const bannerContent = computed(() => {
 </script>
 
 <template>
-    <div class="banner-container u-noselect u-flex u-flex-direction-column u-justify-content-center u-align-content-center">
+    <section class="banner-container u-noselect u-flex u-flex-direction-column u-justify-content-center u-align-content-center">
         <h1 class="">{{ bannerContent?.name}}</h1>
         <p class="">{{ bannerContent?.job}}</p>
-    </div>
+    </section>
 </template>
 
 <style scoped lang="scss">

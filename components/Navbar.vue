@@ -61,6 +61,7 @@ function toggleNavbarMenu() {
 nav {
     position: fixed;
     top: 0;
+    z-index: 1000;
 
     .bg-menu {
         position: absolute;
