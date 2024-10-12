@@ -1,19 +1,13 @@
-<script setup lang="ts">
+<script setup lang="js">
 
 import { useMainStore } from "~/store";
 const store = useMainStore();
 
-interface ContentType {
-    type: string;
-    content: {
-        name: string;
-        job: string;
-    };
-}
+
 
 // Computed datas
 const bannerContent = computed(() => {
-    const content = (store.webSiteContent as ContentType[])?.find(type => type.type === 'banner');
+    const content = store.webSiteContent?.find(type => type.type === 'banner');
     return content ? content.content : null;
 })
 </script>

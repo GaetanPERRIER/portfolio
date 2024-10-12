@@ -1,4 +1,4 @@
-import { useMainStore } from '~/store'
+import { useMainStore } from '~/store/index.js'
 
 export default defineNuxtPlugin(({ $pinia }) => {
     return {

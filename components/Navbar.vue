@@ -1,31 +1,24 @@
-<script setup lang="ts">
+<script setup lang="js">
 
 import { useMainStore } from "~/store";
 const store = useMainStore();
 
-interface ContentType {
-    type: string;
-    content: {
-        name: string;
-        link: string;
-    };
-}
 
 const isMenuOpen = ref(false);
 
 // Computed datas
 const lang = computed(() => store.lang)
 const navbarContent = computed(() => {
-    const content = (store.webSiteContent as ContentType[])?.find(type => type.type === 'navbar');
+    const content = store.webSiteContent?.find(type => type.type === 'navbar');
     return content ? content.content : null;
 })
 
 // Functions
 function toggleNavbarMenu() {
-    const menuContent = document.querySelector('.menu-content') as HTMLElement;
-    const bgMenu = document.querySelector('.bg-menu') as HTMLElement;
-    const menuBurger = document.querySelector('.menu-burger') as HTMLElement;
-    const children = menuBurger.children as HTMLCollectionOf<HTMLElement>;
+    const menuContent = document.querySelector('.menu-content');
+    const bgMenu = document.querySelector('.bg-menu');
+    const menuBurger = document.querySelector('.menu-burger');
+    const children = menuBurger.children;
 
 
     // Manage the burger menu animation
