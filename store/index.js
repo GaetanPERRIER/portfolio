@@ -3,7 +3,8 @@ import { defineStore } from 'pinia';
 export const useMainStore = defineStore('main', {
     state: () => ({
         lang: 'fr',
-        webSiteContent: []
+        webSiteContent: [],
+        partActiveId: 0
     }),
 
     actions: {
@@ -17,6 +18,12 @@ export const useMainStore = defineStore('main', {
                 ? await import('../static/lang/fr.json')
                 : await import('../static/lang/en.json');
             this.webSiteContent = content.default;
+        },
+
+        setPartActiveId(id) {
+            this.partActiveId = id;
         }
+
+
     }
 });
