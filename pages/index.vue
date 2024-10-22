@@ -3,6 +3,7 @@
 import { useMainStore} from "~/store";
 import { defineProps } from "vue";
 import { ref } from 'vue'
+import PartContent from "~/components/PartContent.vue";
 
 const store = useMainStore();
 
@@ -27,11 +28,11 @@ onMounted(() => {
     <Navbar />
     <NavigationArrow />
     <Banner />
-    <section class="about-part-container u-flex u-justify-content-center u-align-items-center u-gap35">
+    <section class="about-part-container u-flex u-justify-content-center u-align-items-center">
         <PartContent type="about" />
     </section>
-    <section class="projects-part-container">
-
+    <section class="projects-part-container u-flex u-justify-content-center u-align-items-center">
+        <PartContent type="projects" />
     </section>
     <section class="formations-part-container">
 
@@ -55,7 +56,7 @@ onMounted(() => {
     .projects-part-container {
         width: 100%;
         height: 100vh;
-        background: url("../assets/imgs/banner/banner-4.jpg") no-repeat;
+        background: url("../static/imgs/banner/banner-4.jpg") no-repeat;
         background-size: cover;
     }
 
@@ -68,7 +69,7 @@ onMounted(() => {
     .contact-part-container {
         width: 100%;
         height: 100vh;
-        background: url("../assets/imgs/banner/banner-2.jpg") no-repeat;
+        background: url("../static/imgs/banner/banner-2.jpg") no-repeat;
         background-size: cover;
     }
 </style>

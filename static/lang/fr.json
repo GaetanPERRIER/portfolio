@@ -35,12 +35,45 @@
         "text": "À propos de moi"
       },
       {
-        "type": "image",
-        "src": "assets/imgs/photo.jpg"
+        "type": "image-about",
+        "src": "/static/imgs/photo.jpg"
       },
       {
         "type": "text",
         "text": "Je m'appelle Gaëtan Perrier, j'ai 20 ans et je suis étudiant en 3ème année de BUT Informatique à l'IUT d'Amiens. Je suis actuellement à la recherche d'un stage de fin d'études pour une durée de 14 semaines minimum à partir du 3 mars 2025"
+      }
+    ]
+  },
+  {
+    "type" : "projects",
+    "content": [
+      {
+        "type": "title",
+        "text": "Projets récents"
+      },
+      {
+        "type": "project",
+        "title": "Projet 1",
+        "description": "Description du projet 1",
+        "link": "https://www.google.com"
+      },
+      {
+        "type": "project",
+        "title": "Projet 2",
+        "description": "Description du projet 2",
+        "link": "https://www.google.com"
+      },
+      {
+        "type": "project",
+        "title": "Projet 3",
+        "description": "Description du projet 3",
+        "link": "https://www.google.com"
+      },
+      {
+        "type": "project",
+        "title": "Projet 4",
+        "description": "Description du projet 4",
+        "link": "https://www.google.com"
       }
     ]
   }

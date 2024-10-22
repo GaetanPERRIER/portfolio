@@ -22,7 +22,7 @@ const bannerContent = computed(() => {
 <style scoped lang="scss">
 
 .banner-container {
-    background: url('../assets/imgs/banner/banner.jpg') no-repeat;
+    background: url('../static/imgs/banner/banner.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
