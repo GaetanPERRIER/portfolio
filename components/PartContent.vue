@@ -15,7 +15,14 @@ const content = computed(() => {
     return content ? content.content : null;
 })
 
+function MoveProjects(){
+    const projects = document.querySelectorAll('.project');
+
+}
+
 onMounted(() => {
+    MoveProjects();
+
 
 })
 
@@ -36,10 +43,16 @@ onMounted(() => {
         <div v-if="type === 'projects'" class="project-container u-flex u-flex-direction-column u-align-items-center u-justify-content-center">
             <h1 v-if="content && content[0].type === 'title'" class="t-color-white u-mb20" v-html="content[0].text"></h1>
 
-            <div class="u-flex u-flex-wrap u-align-items-center u-justify-content-center u-gap20 w60">
-                <div v-for="i in 4" class="project">
-                    <h2 v-if="content && content[i].type ==='project'" v-html="content[i].title"></h2>
-                    <p v-if="content && content[i].type ==='project'" v-html="content[i].description"></p>
+            <div class="u-flex u-align-items-center u-justify-content-center w80 u-flex-wrap u-gap25">
+                <div v-for="i in 4" class="project u-p20">
+                    <h2 v-if="content && content[i].type ==='project'" v-html="content[i].title" class="t-color-white u-mb10"></h2>
+                    <div class="u-flex w100 u-gap10 u-justify-content-center u-align-items-center">
+                        <p v-if="content && content[i].type ==='project'" v-html="content[i].description" class="t-color-white w60"></p>
+                        <div class="w40 u-flex u-justify-content-center u-align-items-center">
+                            <img class="img-projet" src="" alt="">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -50,7 +63,7 @@ onMounted(() => {
 
 h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Inconsolata', serif;
     text-transform: uppercase;
 }
@@ -77,9 +90,34 @@ h1 {
 
 .project-container {
     .project {
-        width: 400px;
-        height: 200px;
-        background-color: #FFF;
+        width: 450px;
+        height: 190px;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+        background-color: rgba(20, 20, 20, 0.9);
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Inconsolata', serif;
+            text-transform: uppercase;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-family: 'Poppins', serif;
+            font-weight: 100;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            background-color: #FFFFFF;
+        }
+
+
     }
 }
 

@@ -20,10 +20,5 @@ export const useMainStore = defineStore('main', {
             this.webSiteContent = content.default;
         },
 
-        setPartActiveId(id) {
-            this.partActiveId = id;
-        }
-
-
     }
 });
