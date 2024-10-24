@@ -16,7 +16,6 @@ const aboutContent = computed(() => {
     return content ? content.content : null;
 })
 
-
 // Functions
 onMounted(() => {
     store.getWebSiteContent()

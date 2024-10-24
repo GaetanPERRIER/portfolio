@@ -43,5 +43,46 @@
         "text": "My name is Gaëtan Perrier, I'm 20 years old and I'm a student in my 3rd year of BUT Informatique at the IUT in Amiens. I'm currently looking for a 14-week internship starting March 3, 2025."
       }
     ]
+  },
+  {
+    "type" : "projects",
+    "content": [
+      {
+        "type": "title",
+        "text": "Recent projects"
+      },
+      {
+        "type": "project",
+        "title": "Carte intéractive",
+        "description": "Carte réferançant les parking à vélo de France",
+        "techno" : "- Technologies : Nuxt.js/Leaflet/Strapi",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
+        "link": "https://www.google.com"
+      },
+      {
+        "type": "project",
+        "title": "Site CID (Fictif)",
+        "description": "Réaslisation d'un site associatif fictif pour le CID",
+        "techno" : "- Technologies : Nuxt.js/Django",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
+        "link": "https://www.google.com"
+      },
+      {
+        "type": "project",
+        "title": "Jeu 2048",
+        "description": "Projet sur la qualité de développement plutôt que sur le jeu",
+        "techno" : "- Technologies : Nuxt.js",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
+        "link": "https://www.google.com"
+      },
+      {
+        "type": "project",
+        "title": "Puissance 4 (IA)",
+        "description": "Développement d'un jeu de puissance 4 avec une IA",
+        "techno" : "- Technologies : C#",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
+        "link": "https://www.google.com"
+      }
+    ]
   }
 ]

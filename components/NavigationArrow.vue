@@ -13,7 +13,7 @@ function ScrollTo() {
     const scrollY = window.scrollY +1;
     const nextSection = sectionOffsets.find(offset => offset > scrollY);
 
-    gsap.to(window, {duration: 1.5, scrollTo: nextSection, ease: "power4.inOut"});
+    gsap.to(window, {duration: 1.3, scrollTo: nextSection, ease: "power4.inOut"});
 
 }
 

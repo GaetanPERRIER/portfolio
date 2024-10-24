@@ -53,26 +53,34 @@
       },
       {
         "type": "project",
-        "title": "Projet 1",
-        "description": "Description du projet 1",
+        "title": "Carte intéractive",
+        "description": "Carte réferançant les parking à vélo de France",
+        "techno" : "- Technologies : Nuxt.js/Leaflet/Strapi",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
         "link": "https://www.google.com"
       },
       {
         "type": "project",
-        "title": "Projet 2",
-        "description": "Description du projet 2",
+        "title": "Site CID (Fictif)",
+        "description": "Réaslisation d'un site associatif fictif pour le CID",
+        "techno" : "- Technologies : Nuxt.js/Django",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
         "link": "https://www.google.com"
       },
       {
         "type": "project",
-        "title": "Projet 3",
-        "description": "Description du projet 3",
+        "title": "Jeu 2048",
+        "description": "Projet sur la qualité de développement plutôt que sur le jeu",
+        "techno" : "- Technologies : Nuxt.js",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
         "link": "https://www.google.com"
       },
       {
         "type": "project",
-        "title": "Projet 4",
-        "description": "Description du projet 4",
+        "title": "Puissance 4 (IA)",
+        "description": "Développement d'un jeu de puissance 4 avec une IA",
+        "techno" : "- Technologies : C#",
+        "image" : "/_nuxt/static/imgs/content/project-image.png",
         "link": "https://www.google.com"
       }
     ]

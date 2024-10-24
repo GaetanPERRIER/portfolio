@@ -15,14 +15,8 @@ const content = computed(() => {
     return content ? content.content : null;
 })
 
-function MoveProjects(){
-    const projects = document.querySelectorAll('.project');
-
-}
 
 onMounted(() => {
-    MoveProjects();
-
 
 })
 
@@ -43,23 +37,25 @@ onMounted(() => {
         <div v-if="type === 'projects'" class="project-container u-flex u-flex-direction-column u-align-items-center u-justify-content-center">
             <h1 v-if="content && content[0].type === 'title'" class="t-color-white u-mb20" v-html="content[0].text"></h1>
 
-            <div class="u-flex u-align-items-center u-justify-content-center w80 u-flex-wrap u-gap25">
-                <div v-for="i in 4" class="project u-p20">
-                    <h2 v-if="content && content[i].type ==='project'" v-html="content[i].title" class="t-color-white u-mb10"></h2>
-                    <div class="u-flex w100 u-gap10 u-justify-content-center u-align-items-center">
-                        <p v-if="content && content[i].type ==='project'" v-html="content[i].description" class="t-color-white w60"></p>
-                        <div class="w40 u-flex u-justify-content-center u-align-items-center">
-                            <img class="img-projet" src="" alt="">
-                        </div>
+            <div class="u-flex u-align-items-center u-justify-content-center w70 u-flex-wrap u-gap25">
+                <div v-for="i in 4" class="project u-flex u-justify-content-between">
+                    <div class="w60 u-p25">
+                        <h2 v-if="content && content[i].type === 'project'" class="t-color-white u-mb20" v-html="content[i].title"></h2>
+                        <p v-if="content && content[i].type === 'project'" class="t-color-white u-mb10" v-html="content[i].description"></p>
+                        <p v-if="content && content[i].type === 'project'" class="t-color-white" v-html="content[i].techno"></p>
                     </div>
-
+                    <div class="img-container w40">
+                        <img v-if="content && content[i].type === 'project'" :src="content[i].image" alt="">
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </template>
 
 <style scoped lang="scss">
+@import '@/assets/styles/settings/settings.scss';
 
 h1 {
     text-align: center;
@@ -93,8 +89,30 @@ h1 {
         width: 450px;
         height: 190px;
         border-radius: 10px;
-        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+        box-shadow: rgba(17, 17, 17, 0.5) 0 7px 29px 0;
         background-color: rgba(20, 20, 20, 0.9);
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 500ms $authenticMotion;
+
+        &:hover {
+            box-shadow: rgba(100, 100, 111, 0.8) 0 7px 29px 0;
+            transform: scale(1.05);
+        }
+
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                clip-path: polygon(21% 0, 100% 0%, 100% 100%, 0 100%);
+                background-color: #405B8F;
+            }
+        }
 
         h2 {
             text-align: center;
@@ -104,20 +122,13 @@ h1 {
         }
 
         p {
-            text-align: center;
+            text-align: left;
             font-size: 16px;
             letter-spacing: 2px;
             font-family: 'Poppins', serif;
             font-weight: 100;
+            line-height: 18px;
         }
-
-        img {
-            width: 100px;
-            height: 100px;
-            background-color: #FFFFFF;
-        }
-
-
     }
 }
 
