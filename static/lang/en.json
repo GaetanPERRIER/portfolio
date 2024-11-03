@@ -54,17 +54,17 @@
       {
         "type": "hobby",
         "name": "Formula 1",
-        "image": "/_nuxt/static/imgs/content/hobbies/f1.jpg"
+        "image": "/static/imgs/content/hobbies/f1.jpg"
       },
       {
         "type": "hobby",
         "name": "Video games",
-        "image": "/_nuxt/static/imgs/content/hobbies/kj.jpg"
+        "image": "/static/imgs/content/hobbies/kj.jpg"
       },
       {
         "type": "hobby",
         "name": "Badminton",
-        "image": "/_nuxt/static/imgs/content/hobbies/badminton.jpg"
+        "image": "/static/imgs/content/hobbies/badminton.jpg"
       }
     ]
   },
@@ -80,7 +80,7 @@
         "title": "Interactive map",
         "description": "Map of bicycle parking facilities in France",
         "techno" : "- Technologies : Nuxt.js/Leaflet/Strapi",
-        "image" : "/_nuxt/static/imgs/content/interactive-map/interactive-map.jpg",
+        "image" : "/static/imgs/content/interactive-map/interactive-map.jpg",
         "slug": "interactive-map"
       },
       {
@@ -88,7 +88,7 @@
         "title": "CID site",
         "description": "Reaslisation of a fictitious associative site for CID",
         "techno" : "- Technologies : Nuxt.js/Django",
-        "image" : "/_nuxt/static/imgs/content/cid-website/site.png",
+        "image" : "/static/imgs/content/cid-website/site.png",
         "slug": "cid-website"
       },
       {
@@ -96,7 +96,7 @@
         "title": "Game 2048",
         "description": "Project focused on development quality rather than gameplay",
         "techno" : "- Technologies : Nuxt.js",
-        "image" : "/_nuxt/static/imgs/content/2048-game/game.jpg",
+        "image" : "/static/imgs/content/2048-game/game.jpg",
         "slug": "2048-game"
       },
       {
@@ -104,7 +104,7 @@
         "title": "Connect 4 (AI)",
         "description": "Connect 4 game development with AI",
         "techno" : "- Technologies : C#",
-        "image" : "/_nuxt/static/imgs/content/connect-four/game.png",
+        "image" : "/static/imgs/content/connect-four/game.png",
         "slug": "connect-four-ia"
       }
     ]
@@ -123,7 +123,7 @@
         "location" : "Lycée Condorcet, Méru (60)",
         "subtitle" : "Specialities :",
         "description": "NSI (Numerics and Computer Sciences)<br/>  Mathematics,<br/>  Engineering Sciences",
-        "image" : "/_nuxt/static/imgs/content/hobbies/devweb.jpg"
+        "image" : "/static/imgs/content/hobbies/devweb.jpg"
       },
       {
         "type": "formation",
@@ -132,7 +132,7 @@
         "location" : "IUT d'Amiens (80) ",
         "subtitle" : "Course : Application development",
         "description": "Web development (HTML/CSS/JS/PHP) + (Vue.js/Nuxt.js) <br/>  Software development (C/C++/C#/Python/Java) <br/> Database (SQL/NoSQL)",
-        "image" : "/_nuxt/static/imgs/content/hobbies/dev.png"
+        "image" : "/static/imgs/content/hobbies/dev.png"
       }
     ]
   },
