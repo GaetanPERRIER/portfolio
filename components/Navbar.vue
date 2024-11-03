@@ -29,7 +29,7 @@ function ScrollTo(event) {
     const sections = document.querySelectorAll('section');
     const id = Array.from(document.querySelector('.menu-content').children).findIndex(child => child.innerText === event.target.innerText) + 1;
 
-    gsap.to(window, {duration: 1.5, scrollTo: sections[id], ease: "power4.inOut"});
+    gsap.to(window, {duration: 1.3, scrollTo: sections[id + 1], ease: "power4.inOut"});
     toggleNavbarMenu();
 }
 </script>
