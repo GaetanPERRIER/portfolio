@@ -54,7 +54,7 @@
       {
         "type": "hobby",
         "name": "Formule 1",
-        "image": "../static/imgs/content/hobbies/f1.jpg"
+        "image": "../assets/imgs/content/hobbies/f1.jpg"
       },
       {
         "type": "hobby",
