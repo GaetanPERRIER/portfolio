@@ -36,7 +36,7 @@
       },
       {
         "type": "image-about",
-        "src": "/static/imgs/photo.jpg"
+        "src": ""
       },
       {
         "type": "text",
@@ -54,17 +54,17 @@
       {
         "type": "hobby",
         "name": "Formule 1",
-        "image": "/_nuxt/static/imgs/content/hobbies/f1.jpg"
+        "image": "../static/imgs/content/hobbies/f1.jpg"
       },
       {
         "type": "hobby",
         "name": "Jeux vidéo",
-        "image": "/static/imgs/content/hobbies/kj.jpg"
+        "image": "/_nuxt/static/imgs/content/hobbies/kj.jpg"
       },
       {
         "type": "hobby",
         "name": "Badminton",
-        "image": "/static/imgs/content/hobbies/badminton.jpg"
+        "image": "/_nuxt/static/imgs/content/hobbies/badminton.jpg"
       }
     ]
   },
@@ -80,7 +80,7 @@
         "title": "Carte intéractive",
         "description": "Carte réferançant les parking à vélo de France",
         "techno" : "- Technologies : Nuxt.js/Leaflet/Strapi",
-        "image" : "/static/imgs/content/interactive-map/interactive-map.jpg",
+        "image" : "/_nuxt/static/imgs/content/interactive-map/interactive-map.jpg",
         "slug": "interactive-map"
       },
       {
@@ -88,7 +88,7 @@
         "title": "Site CID (Fictif)",
         "description": "Réaslisation d'un site associatif fictif pour le CID",
         "techno" : "- Technologies : Nuxt.js/Django",
-        "image" : "/static/imgs/content/cid-website/site.png",
+        "image" : "/_nuxt/static/imgs/content/cid-website/site.png",
         "slug": "cid-website"
       },
       {
@@ -96,7 +96,7 @@
         "title": "Jeu 2048",
         "description": "Projet sur la qualité de développement plutôt que sur le jeu",
         "techno" : "- Technologies : Nuxt.js",
-        "image" : "/static/imgs/content/2048-game/game.jpg",
+        "image" : "/_nuxt/static/imgs/content/2048-game/game.jpg",
         "slug": "2048-game"
       },
       {
@@ -104,7 +104,7 @@
         "title": "Puissance 4 (IA)",
         "description": "Développement d'un jeu de puissance 4 avec une IA",
         "techno" : "- Technologies : C#",
-        "image" : "/static/imgs/content/connect-four/game.png",
+        "image" : "/_nuxt/static/imgs/content/connect-four/game.png",
         "slug": "connect-four-ia"
       }
     ]
@@ -123,7 +123,7 @@
         "location" : "Lycée Condorcet, Méru (60)",
         "subtitle" : "Spécialités :",
         "description": "NSI (Numérique et Sciences de l'Informatique)<br/>  Mathématiques,<br/>  Sciences de l'Ingénieur",
-        "image" : "/static/imgs/content/hobbies/devweb.jpg"
+        "image" : "/_nuxt/static/imgs/content/hobbies/devweb.jpg"
       },
       {
         "type": "formation",
@@ -132,7 +132,7 @@
         "location" : "IUT d'Amiens (80) ",
         "subtitle" : "Parcours : Réalisation d'applications",
         "description": "Développement Web (HTML/CSS/JS/PHP) + (Vue.js/Nuxt.js) <br/>  Développement Logiciel (C/C++/C#/Python/Java) <br/> Base de données (SQL/NoSQL)",
-        "image" : "/static/imgs/content/hobbies/dev.png"
+        "image" : "/_nuxt/static/imgs/content/hobbies/dev.png"
       }
     ]
   },
