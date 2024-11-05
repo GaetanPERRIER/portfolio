@@ -31,7 +31,7 @@ onMounted(() => {
             <h1 v-if="hobbiesContent && hobbiesContent[0].type === 'title'">{{ hobbiesContent[0].text }}</h1>
             <div v-if="hobbiesContent" class="u-flex u-justify-content-center u-align-items-center u-gap25">
                 <div v-for="i in 3" class="hobby">
-                    <img :src="hobbiesContent[i].image" alt="">
+                    <img src="../static/imgs/content/hobbies/f1.jpg" alt="">
                     <p class="u-mt5" v-html="hobbiesContent[i].name"></p>
                 </div>
             </div>
