@@ -7,8 +7,6 @@ import PartContent from "~/components/PartContent.vue";
 
 const store = useMainStore();
 
-
-
 // Computed datas
 
 const aboutContent = computed(() => {
@@ -19,7 +17,6 @@ const aboutContent = computed(() => {
 // Functions
 onMounted(() => {
     store.getWebSiteContent()
-
 })
 
 </script>
