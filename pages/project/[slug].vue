@@ -27,7 +27,7 @@ onMounted(() => {
 .project-global-container {
     width: 100%;
     height: 100vh;
-    background: url("/static/imgs/banner/banner.jpg") no-repeat;
+    background: url("/imgs/banner/banner.jpg") no-repeat;
     background-size: cover;
 
     a {

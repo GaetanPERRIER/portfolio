@@ -53,7 +53,7 @@ onMounted(() => {
 .banner-container {
     position: absolute;
     top: 0;
-    background: url('../static/imgs/banner/banner.jpg') no-repeat;
+    background: url('../public/imgs/banner/banner.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100%;
