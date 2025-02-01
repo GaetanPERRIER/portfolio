@@ -26,7 +26,7 @@ onMounted(() => {
     <div>
         <!-- About content -->
         <div v-if="type === 'about'" class="about-container u-flex u-align-items-center u-justify-content-center">
-            <img class="photo" src="" alt="">
+            <img class="photo" src="/imgs/moi.jpg" alt="">
             <div v-if="content" class="u-flex u-flex-direction-column u-align-items-center u-justify-content-center u-gap25 u-m50">
                 <h1 v-if="content[0].type === 'title'" class="t-color-white" v-html="content[0].text"></h1>
                 <p v-if="content[2].type === 'text'" class="t-color-white" v-html="content[2].text"></p>
@@ -117,8 +117,8 @@ h1 {
     }
 
     .photo {
-        width: 400px;
-        height: 400px;
+        width: 350px;
+        aspect-ratio: 1/1;
         background-color: #405B8F;
         border-radius: 10px;
     }
