@@ -38,8 +38,8 @@ function ScrollTo(event) {
     <nav class="w100 h150px u-gap100 u-flex u-justify-content-around u-align-items-center">
         <div class="bg-menu h100"></div>
         <div class="lang u-noselect" @click="store.toggleLang">
-            <img class="icon-fr u-noselect" src="/static/imgs/lang-icons/france.png" alt="" :style="{ left: lang === 'fr' ? '0' : '34px', opacity: lang === 'fr' ? 1 : 0 }">
-            <img class="icon-en u-noselect" src="/static/imgs/lang-icons/royaume-uni.png" alt="" :style="{ right: lang === 'en' ? '0' : '34px', opacity: lang === 'en' ? 1 : 0 }">
+            <img class="icon-fr u-noselect" src="/imgs/lang-icons/france.png" alt="" :style="{ left: lang === 'fr' ? '0' : '34px', opacity: lang === 'fr' ? 1 : 0 }">
+            <img class="icon-en u-noselect" src="/imgs/lang-icons/royaume-uni.png" alt="" :style="{ right: lang === 'en' ? '0' : '34px', opacity: lang === 'en' ? 1 : 0 }">
         </div>
         <div class="menu-content w40 u-flex u-align-items-center u-justify-content-center u-gap50">
             <p v-if="isMenuOpen" @click="ScrollTo" v-for="navEl in navbarContent" :key="navEl.name">{{ navEl.name }}</p>

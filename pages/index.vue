@@ -59,7 +59,7 @@ onMounted(() => {
         .parallax {
             width: 100%;
             height: 100vh;
-            background: url("../static/imgs/banner/banner-4.jpg") no-repeat;
+            background: url("../public/imgs/banner/banner-4.jpg") no-repeat;
             background-size: cover;
             position: absolute;
             top: 0;
@@ -81,7 +81,7 @@ onMounted(() => {
         .parallax{
             width: 100%;
             height: 100vh;
-            background: url("../static/imgs/banner/banner-2.jpg") no-repeat;
+            background: url("../public/imgs/banner/banner-2.jpg") no-repeat;
             background-size: cover;
             position: absolute;
             top: 0;
