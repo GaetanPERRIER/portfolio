@@ -16,7 +16,7 @@
             </div>
 
             <div class="footer-cv">
-                <p>Télecharger mon CV</p>
+                <a href="/cv_gaetan_perrier.pdf" download="cv_gaetan_perrier.pdf">Télecharger mon CV</a>
             </div>
         </div>
     </footer>
@@ -29,7 +29,7 @@ export default {
         return {
             links: [
                 { icon: 'fab fa-github', url: 'https://github.com/GaetanPERRIER' },
-                { icon: 'fab fa-linkedin-in', url: 'https://linkedin.com' },
+                { icon: 'fab fa-linkedin-in', url: 'https://www.linkedin.com/in/gaëtan-perrier-0446142a6' },
             ]
         }
     }

@@ -1,7 +1,7 @@
 <script setup>
 const socials = [
     { icon: 'fab fa-github', link: 'https://github.com/GaetanPERRIER' },
-    { icon: 'fab fa-linkedin-in', link: 'https://linkedin.com' },
+    { icon: 'fab fa-linkedin-in', link: 'https://www.linkedin.com/in/gaëtan-perrier-0446142a6' },
 ]
 </script>
 
