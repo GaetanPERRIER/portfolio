@@ -17,7 +17,7 @@ const featuredProjects = [
         description: 'Jeu de société solo où le joueur affronte des bots dans une partie de loups-garou tour par tour, avec une interface utilisateur, différents chats et la gestion des rôles.',
         technologies: ['React.js', 'Node.js'],
         image: '/loupgarou-game.png',
-        github: 'https://github.com/GaetanPERRIER',
+        github: '#',
         demo: '#'
     },
     {
@@ -26,7 +26,7 @@ const featuredProjects = [
         category: 'Projet scolaire',
         description: 'Application web interactive permettant de localiser les parkings à vélos en France, avec des informations détaillées sur chaque emplacement.',
         technologies: ['Vue.js', 'Strapi'],
-        image: '/interactive-map.jpg',
+        image: '/map.png',
         github: 'https://github.com/GaetanPERRIER/CarteSAE4',
         demo: '#'
     }
@@ -69,12 +69,12 @@ const featuredProjects = [
                         </div>
 
                         <div class="project-links">
-                            <a :href="project.github" target="_blank" class="repo-links" rel="noopener noreferrer">
+                            <a v-if="project.github !== '#'" :href="project.github" target="_blank" class="repo-links" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <div class="repo-links" rel="noopener noreferrer">
+                            <a v-if="project.demo !== '#'" :href="project.demo" class="repo-links" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
