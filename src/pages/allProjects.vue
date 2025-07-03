@@ -19,7 +19,7 @@ const projects = ref([
         description: 'Jeu de société solo où le joueur affronte des bots dans une partie de loups-garou tour par tour, avec une interface utilisateur, différents chats et la gestion des rôles.',
         technologies: ['React.js', 'Node.js'],
         image: '/loupgarou-game.png',
-        github: 'https://github.com/GaetanPERRIER',
+        github: '#',
         demo: '#'
     },
     {
@@ -28,7 +28,7 @@ const projects = ref([
         category: 'Projet scolaire',
         description: 'Application web interactive permettant de localiser les parkings à vélos en France, avec des informations détaillées sur chaque emplacement.',
         technologies: ['Vue.js', 'Strapi'],
-        image: '/interactive-map.jpg',
+        image: '/map.png',
         github: 'https://github.com/GaetanPERRIER/CarteSAE4',
         demo: '#'
     },
@@ -49,7 +49,7 @@ const projects = ref([
         description: 'Jeu de puissance 4 où le joueur affronte une IA, avec une interface utilisateur simple et l\'utilisation de l\'algorithme Minimax pour la prise de décision de l\'IA.',
         technologies: ['C#', 'Windows Forms'],
         image: '/p4-game.png',
-        github: 'https://github.com/GaetanPERRIER',
+        github: 'https://github.com/MaximeB16/SAE_Puissance_4',
         demo: '#'
     },
     {
@@ -59,7 +59,7 @@ const projects = ref([
         description: 'Jeu de 2048 développé avec une interface utilisateur simple, permettant au joueur de fusionner des tuiles pour atteindre le score de 2048. L\'objectif était de se concentrer sur la qualité du code.',
         technologies: ['Vue.js'],
         image: '/2048-game.jpg',
-        github: 'https://github.com/GaetanPERRIER',
+        github: 'https://github.com/LouisMeM/Delaval-Dupuis_Perrier_Mamtchourouk_Chakroune_2048',
         demo: '#'
     },
     {
@@ -70,6 +70,26 @@ const projects = ref([
         technologies: ['Nuxt.js', 'Django'],
         image: '/cid-site.png',
         github: 'https://github.com/GaetanPERRIER/cid-site',
+        demo: 'https://nextjs-boilerplate-olive-one-55.vercel.app/'
+    },
+    {
+        id: 9,
+        title: 'Portfolio personnel',
+        category: 'Projet personnel',
+        description: "Développement d'un portfolio, dans l'optique d'exposer mes projet et mon parcours",
+        technologies: ['Vue.js'],
+        image: '/portfolio.png',
+        github: 'https://github.com/GaetanPERRIER/portfolio',
+        demo: 'https://gaetanperrier.vercel.app/'
+    },
+    {
+        id: 8,
+        title: 'Calculateur de masques réseaux',
+        category: 'Projet scolaire',
+        description: "Développement d'un calculateur de masque réseaux avec une interface, projet de première année de BUT Informatique. Prise en compte des types d'adresse IP et des cas particulier",
+        technologies: ['C#',],
+        image: '/calcul-masque.png',
+        github: 'https://github.com/GaetanPERRIER/Calculateur-de-masque-reseaux',
         demo: '#'
     },
 ])
@@ -116,12 +136,12 @@ const loadMore = () => {
               </span>
                         </div>
                         <div class="project-links">
-                            <div class="repo-links" rel="noopener noreferrer">
+                            <a v-if="project.github !== '#'" :href="project.github" target="_blank" class="repo-links" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
-                            </div>
-                            <div class="repo-links" rel="noopener noreferrer">
+                            </a>
+                            <a v-if="project.demo !== '#'" :href="project.demo" class="repo-links" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
